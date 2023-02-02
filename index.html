@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" id="html" onclick="navToggle()">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Trip</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="plugins/owl.carousel.css" />
+    <link rel="stylesheet" href="plugins/owl.theme.default.css" />
+  </head>
+  <body id="body" onclick="navToggle()">
+    <section class="main-screen">
+      <div class="container">
+        <header class="main-screen__header header">
+          <div class="header__logo">
+            <a class="header__logo" href="#">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="header__burger">
+            <span
+              id="icon-menu"
+              onclick="navToggle()"
+              class="material-icons _active"
+            >
+              menu
+            </span>
+          </div>
+          <nav class="header__nav nav" id="nav">
+            <ul class="nav__ul">
+              <li class="nav__li">
+                <a class="nav__a" onclick="navToggle()" href="#"> Home</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__a" onclick="navToggle()" href="#">Services</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__a" onclick="navToggle()" href="#">Pricing</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__a" onclick="navToggle()" href="#">Contact</a>
+              </li>
+            </ul>
+            <span id="icon-close" onclick="navToggle()" class="material-icons">
+              close
+            </span>
+          </nav>
+          <div class="header__links" id="links">
+            <a href="#">Sign up</a>
+            <a class="btn btn-secondary" href="#">Login</a>
+          </div>
+        </header>
+        <div class="main-screen__content">
+          <div class="main-screen__info">
+            <div class="main-screen__badge">explore the world</div>
+            <h1 class="main-screen__title">
+              Explore The Natural Beauty Of Halmahera With Us
+            </h1>
+            <p class="main-screen__desc">
+              explore the beauty of god's earth in a beautiful forest and have
+              fun
+            </p>
+            <a href="#" class="main-screen__btn btn btn-primary">Explore Now</a>
+          </div>
+          <div class="main-screen__img">
+            <img src="./images/ms-img/ms-img.png" alt="main-avatar" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="destinations">
+      <div class="container-right">
+        <div class="destinations__content">
+          <div class="destinations__info">
+            <div class="destinations__title">
+              Choice Of <span>Destinations</span>
+            </div>
+            <div class="destinations__desc">
+              explore the beauty of god's earth in a beautiful forest and have
+              fun
+            </div>
+            <a class="destinations__btn btn btn-primary" href="#"
+              >Explore Now</a
+            >
+          </div>
+          <div class="destinations__images">
+            <div class="slider">
+              <div class="owl-carousel owl-theme">
+                <div class="slider__item">
+                  <div>
+                    <img src="./images/sl-img/sl-img1.jpg" alt="img1" />
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div>
+                    <img src="./images/sl-img/sl-img2.jpg" alt="img2" />
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div>
+                    <img src="./images/sl-img/sl-img3.jpg" alt="img3" />
+                  </div>
+                </div>
+              </div>
+              <button class="slider__btn slider__btn--prev">
+                <img
+                  src="./images/sl-img/arrow-left.svg"
+                  alt="arrow previous"
+                />
+              </button>
+              <button class="slider__btn slider__btn--next">
+                <img src="./images/sl-img/arrow-right.svg" alt="arrow next" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="customer">
+      <div class="container">
+        <div class="customer__content">
+          <div class="customer__img">
+            <img src="./images/cta/rating-img.jpg" alt="customer" />
+          </div>
+          <div class="customer__info">
+            <h3 class="customer__title">What do customers say about us?</h3>
+            <div class="customer__review review">
+              <div class="review__user">
+                <div class="review__user-img">
+                  <img src="./images/cta/customer-avatar.png" alt="user" />
+                </div>
+                <div class="review__user-text">
+                  <h4 class="review__user-title">Alpanasap</h4>
+                  <p class="review__user-desc">Japung, Indonesia</p>
+                </div>
+              </div>
+              <div class="review__desc">
+                Very satisfying service makes it comfortable, a beautiful place
+                in the world.
+              </div>
+              <div class="review__rating">
+                <img src="./images/cta/stars-rating.svg" alt="stars" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container">
+        <h3 class="cta__title">
+          Prepare Yourself And Start Exploring With Us.
+        </h3>
+        <div class="cta__desc">There's the best discount for you today.</div>
+        <a class="cta__btn btn btn-primary" href="#">Get Started</a>
+      </div>
+    </section>
+    <section class="subscription">
+      <div class="container">
+        <h2 class="subscription__title">
+          Subscribe <br />
+          To Our Newsletter
+        </h2>
+        <div class="subscription__content">
+          <input type="email" placeholder="Yourmail@mail.com" />
+          <a href="#" class="subscription__btn btn btn-primary">Subscribe</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <a class="footer__logo" href="#">
+              <img src="./images/footer-logo.svg" alt="logo" />
+            </a>
+          </div>
+          <nav class="footer__nav nav" id="nav">
+            <ul class="nav__ul">
+              <li class="nav__li">
+                <a class="nav__a" onclick="navToggle()" href="#"> Home</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__a" onclick="navToggle()" href="#">Services</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__a" onclick="navToggle()" href="#">Pricing</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__a" onclick="navToggle()" href="#">Contact</a>
+              </li>
+            </ul>
+            <span id="icon-close" onclick="navToggle()" class="material-icons">
+              close
+            </span>
+          </nav>
+          <div class="footer__links" id="links">
+            <a href="#">Sign up</a>
+            <a class="btn btn-secondary" href="#">Login</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="plugins/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

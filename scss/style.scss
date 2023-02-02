@@ -1,0 +1,12 @@
+@import "vars";
+@import "reset";
+@import "mixins";
+@import "base";
+
+@import "./blocks/header";
+@import "./blocks/main-screen";
+@import "./blocks/destinations";
+@import "./blocks/rating";
+@import "./blocks/cta";
+@import "./blocks/subscription";
+@import "./blocks/footer";

@@ -1,0 +1,68 @@
+.subscription {
+  margin-top: 190px;
+  text-align: center;
+  @include tablet {
+    margin-top: 50px;
+  }
+  &__title {
+    max-width: 494px;
+    @include text($font-primary, 600, 55px, 83px, $title-color);
+    margin: auto;
+    margin-bottom: 60px;
+    @include tablet {
+      font-size: 45px;
+      line-height: 63px;
+      @include mobile {
+        font-size: 30px;
+        line-height: 42px;
+      }
+    }
+  }
+
+  &__content {
+    margin: auto;
+    max-width: 800px;
+    border-radius: 35px;
+    background: $white;
+    padding: 12px 15px 12px 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 116px;
+    @include tablet-small {
+      flex-direction: column;
+      max-width: 550px;
+      padding: 12px 15px 12px 16px;
+    }
+  }
+  input {
+    min-width: 300px;
+    min-height: 40px;
+    border: none;
+    outline: none;
+    background: $white;
+    @include mobile {
+      min-width: 250px;
+    }
+  }
+  .btn-primary {
+    @include text($font-primary, 600, 25px, 38px, $white);
+    padding: 33px 86px;
+    border-radius: 35px;
+    @include tablet {
+      padding: 17px 55px;
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+}
+
+input::placeholder {
+  @include text($font-primary, 500, 24px, 36px, $desc-color);
+  max-width: 248px;
+  height: 36px;
+  @include mobile {
+    font-size: 20px;
+    text-align: center;
+  }
+}

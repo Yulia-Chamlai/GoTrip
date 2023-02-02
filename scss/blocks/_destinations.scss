@@ -1,0 +1,150 @@
+.destinations {
+  padding: 96px 0 100px;
+  overflow-x: hidden;
+  @include desktop-small {
+    padding-bottom: 0;
+  }
+  &__content {
+    display: flex;
+    gap: 49px;
+    @include desktop-small {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    flex: 0 0 456px;
+    -align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include desktop-small {
+      flex: unset;
+    }
+  }
+
+  &__title {
+    @include text($font-primary, 600, 30px, 45px, $title-color);
+    margin-bottom: 15px;
+    span {
+      @include text($font-primary, 600, 55px, 83px, $title-color);
+      @include desktop-small {
+        display: block;
+      }
+      @include mobile {
+        font-size: 45px;
+      }
+    }
+  }
+
+  &__desc {
+    @include text($font-primary, 500, 25px, 38px, $desc-color);
+    margin-bottom: 60px;
+    @include desktop-small {
+      max-width: 456px;
+    }
+    @include mobile {
+      font-size: 22px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__btn {
+    padding: 25px 45px;
+    @include text($font-primary, 600, 20px, 30px, $white);
+  }
+}
+.slider {
+  max-width: 1110px;
+  flex-shrink: 0;
+  position: relative;
+  height: 456px;
+  @include desktop-small {
+    .container-right {
+      padding-right: 20px;
+    }
+    height: 380px;
+    margin: auto;
+    max-width: 930px;
+  }
+
+  @include tablet {
+    max-width: 820px;
+  }
+  @include tablet-small {
+    max-width: 670px;
+  }
+
+  &__item img {
+    margin-top: 27px;
+    width: 335px;
+    height: 402px;
+    border-radius: 35px;
+    object-fit: cover;
+    transition: $transition;
+    @include desktop-small {
+      width: 279px;
+      height: 335px;
+      margin-top: 18px;
+    }
+  }
+  &__btn {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: $accent-color;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tablet {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__btn--prev {
+    padding-left: 26px;
+    justify-content: flex-start;
+    position: absolute;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+    @include desktop-small {
+      left: -12px;
+    }
+    @include tablet {
+      padding-left: 16px;
+    }
+  }
+
+  &__btn--next {
+    padding-right: 26px;
+    justify-content: flex-end;
+    position: absolute;
+    right: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+    @include desktop-small {
+      right: -12px;
+    }
+    @include tablet {
+      padding-right: 16px;
+    }
+  }
+}
+
+.owl-dots {
+  display: none;
+}
+.slider .center img {
+  margin-top: 0;
+  width: 380px;
+  height: 456px;
+  @include desktop-small {
+    height: 380px;
+    width: 317px;
+  }
+}

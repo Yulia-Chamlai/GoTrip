@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  &._overflow {
+    overflow: hidden;
+  }
+  overflow-x: hidden;
+  font-family: $font-primary;
+  margin: 0;
+  background: $bg-color;
+}
+
+.container {
+  max-width: $container;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.container-right {
+  padding-left: calc((100% - 1280px) / 2 + 20px);
+}
+a {
+  text-decoration: none;
+  color: $white;
+}
+li {
+  list-style: none;
+}
+img {
+  /* max-width: 100%;
+  height: auto;*/
+  object-fit: cover;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  background: $btn-grad;
+  display: inline-block;
+  border: none;
+  outline: none;
+
+  &-primary {
+    @include text($font-primary, 600, 25px, 38px, $white);
+    padding: 27px 54px;
+    border-radius: 27px;
+  }
+  &-secondary {
+    @include text($font-primary, 500, 15px, 23px, $white);
+    padding: 13px 43px;
+    border-radius: 100px;
+  }
+}
+._overflow {
+  overflow: hidden;
+}

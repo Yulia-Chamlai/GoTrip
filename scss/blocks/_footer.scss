@@ -1,0 +1,29 @@
+.footer {
+  margin-bottom: 75px;
+  @include mobile {
+    margin-bottom: 50px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo img {
+    @include text($font-primary, 700, 20px, 30px, $accent-color);
+  }
+  &__nav a {
+    color: $desc-color;
+  }
+  &__links {
+    align-items: center;
+    display: flex;
+    gap: 66px;
+    a {
+      @include text($font-primary, 500, 15px, 23px, $desc-color);
+    }
+    .btn {
+      padding: 13px 43px;
+      color: $white;
+    }
+  }
+}

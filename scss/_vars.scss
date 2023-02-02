@@ -1,0 +1,23 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+$font-primary: "Poppins", sans-serif;
+$title-color: #0f1f1c;
+$desc-color: rgba(15, 31, 28, 0.5);
+$text-color: rgba(15, 31, 28, 0.5);
+$accent-color: #ff7c4e;
+$underline: #c4c4c4;
+$white: #fff;
+
+$bg-color: #f6f6f6;
+$bg-grad: linear-gradient(to right, rgba(66, 142, 95, 1), rgba(17, 33, 32, 1));
+
+$btn-grad: linear-gradient(129.54deg, #ff7b4e, #ff584e);
+
+$container: 1280px;
+$container-right: calc((100% - $container) / 2 + 20px);
+
+$transition: 0.3s all ease-in-out;

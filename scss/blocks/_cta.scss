@@ -1,0 +1,81 @@
+.cta {
+  position: relative;
+  margin-top: 133px;
+  margin-bottom: 135px;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  text-align: center;
+  padding: 116px 0;
+  @include tablet {
+    margin-left: 20px;
+    margin-right: 20px;
+    @include tablet-small {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 70px 0;
+    }
+    @include mobile {
+      padding: 50px 0;
+    }
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 63px;
+    height: 83px;
+    @include tablet-small {
+      display: none;
+    }
+  }
+  &::before {
+    background-image: url("./images/cta/cta-el-bottom.svg");
+    left: 74px;
+    bottom: 56px;
+  }
+  &::after {
+    background-image: url("./images/cta/cta-el-top.svg");
+    right: 74px;
+    top: 56px;
+  }
+  &__title {
+    @include text($font-primary, 500, 45px, 68px, $title-color);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 519px;
+    @include tablet-small {
+      font-size: 40px;
+      line-height: 65px;
+    }
+    @include mobile {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+
+  &__desc {
+    @include text($font-primary, 400, 30px, 45px, $desc-color);
+    margin-bottom: 60px;
+
+    @include tablet-small {
+      font-size: 26px;
+      margin-bottom: 47px;
+    }
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 30px;
+      line-height: 30px;
+    }
+  }
+  .btn-primary {
+    @include text($font-primary, 600, 20px, 30px, $white);
+    padding: 24px 55px;
+    @include mobile {
+      padding: 17px 55px;
+      font-size: 15px;
+    }
+  }
+}

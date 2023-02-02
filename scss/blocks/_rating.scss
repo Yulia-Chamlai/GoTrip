@@ -1,0 +1,115 @@
+.customer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @include mobile {
+    margin-bottom: 50px;
+  }
+  &__content {
+    display: flex;
+    gap: 68px;
+    @include desktop-small {
+      gap: 20px;
+    }
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    flex: 0 0 478px;
+    max-height: 537px;
+    @include tablet {
+      flex: unset;
+      height: 400px;
+      width: 100%;
+    }
+    & img {
+      max-width: 478px;
+      border-radius: 60px;
+      height: 100%;
+      @include tablet {
+        max-width: 100%;
+        height: 400px;
+        width: 80%;
+        flex: unset;
+      }
+      @include tablet-small {
+        width: 100%;
+        height: 350px;
+      }
+    }
+  }
+
+  &__title {
+    max-width: 565px;
+    @include text($font-primary, 500, 45px, 68px, $title-color);
+    @include tablet-small {
+      font-size: 40px;
+      line-height: 55px;
+    }
+    @include mobile {
+      font-size: 26px;
+      line-height: 48px;
+    }
+  }
+}
+.review {
+  &__user {
+    display: flex;
+    gap: 33px;
+    @include mobile {
+      gap: 18px;
+    }
+    &-img {
+      width: 134px;
+      height: 134px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      display: inline-block;
+      overflow: hidden;
+      background-color: $accent-color;
+      @include tablet-small {
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &-title {
+      @include text($font-primary, 500, 33px, 50px, $title-color);
+      @include tablet-small {
+        font-size: 28px;
+        line-height: 42px;
+      }
+      @include mobile {
+        font-size: 22px;
+        line-height: 35px;
+      }
+    }
+
+    &-desc {
+      @include text($font-primary, 400, 25px, 38px, $desc-color);
+      margin-bottom: 78px;
+      @include tablet-small {
+        font-size: 21px;
+        line-height: 33px;
+        margin-bottom: 50px;
+      }
+      @include mobile {
+        font-size: 18px;
+        line-height: 29px;
+      }
+    }
+  }
+  &__desc {
+    @include text($font-primary, 500, 22px, 33px, $desc-color);
+    max-width: 491px;
+    margin-bottom: 30px;
+  }
+  &__rating img {
+    max-width: 170px;
+  }
+}

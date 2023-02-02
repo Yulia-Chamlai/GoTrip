@@ -1,0 +1,103 @@
+.main-screen {
+  overflow-x: hidden;
+
+  &__content {
+    position: relative;
+    margin-top: 86px;
+    display: flex;
+    @include tablet-small {
+      flex-direction: column;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 831px;
+      height: 622px;
+      top: -11px;
+      right: 3px;
+      background-image: url("./images/ms-img/header-elements.svg");
+      background-repeat: no-repeat;
+      z-index: 0;
+      @include tablet-small {
+        display: none;
+      }
+      @include mobile {
+        margin-top: 69px;
+      }
+    }
+  }
+
+  &__info {
+    flex: 0 1 592px;
+    z-index: 2;
+    @include tablet-small {
+      flex: 1 0 500px;
+    }
+  }
+
+  &__badge {
+    display: inline-flex;
+    background: rgba(255, 255, 255, 0.25);
+    color: $white;
+    padding: 11px 31px;
+    border-radius: 15px;
+    @include text($font-primary, 500, 18px, 27px, $white);
+    margin-bottom: 7px;
+    @include mobile {
+      font-size: 15px;
+      padding: 8px 18px;
+    }
+  }
+
+  &__title {
+    @include text($font-primary, 400, 55px, 83px, $white);
+    margin-bottom: 30px;
+    @include tablet-small {
+      font-size: 41px;
+    }
+    @include mobile {
+      font-size: 26px;
+      line-height: 45px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__desc {
+    @include text($font-primary, 700, 25px, 38px, $desc-color);
+    margin-bottom: 69px;
+    @include tablet-small {
+      font-size: 23px;
+      max-width: 470px;
+    }
+    @include mobile {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 39px;
+    }
+  }
+
+  &__img {
+    max-width: 898px;
+    position: absolute;
+    right: -95px;
+    top: -173px;
+    z-index: 1;
+    pointer-events: none;
+    @include tablet {
+      right: -245px;
+    }
+    @include tablet-small {
+      width: 70%;
+      position: static;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  .btn-primary {
+    @include mobile {
+      padding: 8px 25px;
+      font-size: 15px;
+    }
+  }
+}
