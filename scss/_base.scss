@@ -55,6 +55,11 @@ p {
   display: inline-block;
   border: none;
   outline: none;
+  transition: $transition;
+  &:hover {
+    color: green;
+    transform: translateY(2px);
+  }
 
   &-primary {
     @include text($font-primary, 600, 25px, 38px, $white);

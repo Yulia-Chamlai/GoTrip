@@ -7,13 +7,14 @@ function navToggle() {
   body.classList.toggle("_overflow");
 }
 
-/*$(".owl-carousel").owlCarousel({
-  items: 2,
-  lazyLoad: true,
-  loop: true,
-  center: true,
-  margin: 30,
-});*/
+function navClose() {
+  var navToggleNav = document.getElementById("nav");
+  navToggleNav.classList.remove("_active");
+  var html = document.getElementById("html");
+  html.classList.remove("_overflow");
+  var body = document.getElementById("body");
+  body.classList.remove("_overflow");
+}
 
 const owl = $(".owl-carousel");
 owl.owlCarousel({
@@ -22,6 +23,7 @@ owl.owlCarousel({
   loop: true,
   center: true,
   margin: 20,
+  startPosition: 1,
   responsive: {
     // breakpoint from 480 up
     480: {

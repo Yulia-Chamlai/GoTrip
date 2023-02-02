@@ -7,23 +7,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet-small {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
   &__logo img {
     @include text($font-primary, 700, 20px, 30px, $accent-color);
   }
-  &__nav a {
-    color: $desc-color;
+
+  &__list-ul {
+    display: flex;
+    gap: 80px;
+    @include mobile {
+      gap: 35px;
+      max-width: 160px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__list-a {
+    @include text($font-primary, 500, 15px, 23px, $desc-color);
+    transition: $transition;
+    &:hover {
+      color: $accent-color;
+    }
   }
   &__links {
-    align-items: center;
     display: flex;
     gap: 66px;
+    align-items: center;
+    transition: $transition;
     a {
-      @include text($font-primary, 500, 15px, 23px, $desc-color);
+      color: $desc-color;
+      &:hover {
+        color: $accent-color;
+      }
     }
-    .btn {
-      padding: 13px 43px;
-      color: $white;
+    @include desktop-small {
+      display: none;
+    }
+  }
+  .btn-secondary {
+    color: $white;
+    transition: $transition;
+    &:hover {
+      color: green;
     }
   }
 }
